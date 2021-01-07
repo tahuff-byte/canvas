@@ -1,23 +1,14 @@
 import turtle as trtl
-import random
+ 
+trtl.color('green','blue')
 
+trtl.begin_fill()
+for i in range(75):
+    trtl.speed(30)
+    trtl.forward(300)
+    trtl.left(170)
 
-ColorList = ['blue' , 'pink' , 'red' , 'purple']
-idx = 0
-ts = trtl.getscreen()
+trtl.end_fill()
+
 wn = trtl.Screen()
-ts
-
-def MousePos(x, y):
-    trtl.onscreenclick(trtl.goto)
-
-
-def k1():
-    for c in ColorList:
-        trtl.begin_fill()
-
-trtl.onscreenclick(MousePos)
-wn.onkey(k1, "f")
-wn.listen()
-
 wn.mainloop()
